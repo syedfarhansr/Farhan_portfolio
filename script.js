@@ -1,6 +1,12 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach((el) => {
+    const windowHeight = window.innerHeight;
+    const elTop = el.getBoundingClientRect().top;
+
+    if (elTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});

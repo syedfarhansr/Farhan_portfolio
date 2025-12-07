@@ -2,140 +2,227 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Syed Farhan | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>Syed Farhan | Full-Stack & Data Science Portfolio</title>
-  <meta name="description" content="Syed Farhan – MCA graduate, Full-Stack Developer & Data Science Enthusiast. Portfolio showcasing projects, experience, and skills." />
-
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/10817/10817310.png" type="image/x-icon" />
-
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/10817/10817310.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- ================= NAV ================= -->
-<nav id="desktop-nav">
-  <div class="logo">
-    <img src="./assets/SA.png" alt="Logo" class="about-pic" />
-  </div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-flex">
+    <div class="logo">Syed <span>Farhan</span></div>
 
-<!-- ================= PROFILE ================= -->
-<section id="profile" class="reveal">
-  <div class="section__pic-container">
-    <img src="./assets/SYEDFARHAN.jpeg" alt="Syed Farhan profile picture" />
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="menuBtn" aria-label="Toggle Menu">☰</button>
   </div>
 
-  <div class="section__text">
-    <p class="section__text__p1">Hello, I'm</p>
-    <h1 class="title">Syed Farhan</h1>
-    <p class="section__text__p2">Full-Stack & Data Science Enthusiast</p>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
 
-    <div class="btn-container">
-      <button class="btn btn-color-2" onclick="window.open('./assets/Farhan.Resume.pdf')">Download CV</button>
-      <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-image-wrapper">
+      <img src="./assets/SYEDFARHAN.jpeg" alt="Syed Farhan" class="hero-image">
+    </div>
+    <h1>Syed Farhan</h1>
+    <p class="typing" id="typing"></p>
+
+    <div class="hero-buttons">
+      <a href="./assets/Farhan.Resume.pdf" class="btn primary" target="_blank" download>Download CV</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
     </div>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="about" class="reveal">
-  <p class="section__text__p1">Get To Know More</p>
-  <h1 class="title">About Me</h1>
+<!-- ABOUT -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p>
+       MCA graduate specialized in Data Science and Full-Stack Development with hands-on experience in data
+preprocessing, ETL pipelines, machine learning model development, and dashboard creation. Demonstrated ability to
+deliver 85% accurate predictive models and build interactive Power BI dashboards that improved decision-making
+efficiency by 25%. Proficient in Python, SQL, JavaScript, and Laravel with strong foundations in both analytical and
+development domains. Eager to contribute to data-driven software solutions through innovation and continuous
+learning.
 
-  <div class="text-container">
-    <p>
-      Hi 👋 I'm <strong>Syed Farhan</strong>, an MCA graduate specializing in
-      <strong>Data Science and Full-Stack Development</strong>.
-      I build scalable web applications, RESTful APIs, and data-driven solutions.
-      <br /><br />
-      I’ve delivered predictive models with <strong>85% accuracy</strong> and
-      Power BI dashboards improving decision-making by <strong>25%</strong>.
-      Actively seeking roles in <strong>software and data-driven engineering</strong>.
-    </p>
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- ================= EXPERIENCE (TIMELINE) ================= -->
-<section id="experience" class="reveal">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
+<!-- EXPERIENCE -->
+<section id="experience" class="section light experience-section">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
 
-  <div class="timeline">
+    <div class="timeline">
+      <div class="card timeline-item">
+        <div class="timeline-badge">
+          <span class="badge-icon">📞</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Chat Process Executive</h3>
+          <span class="timeline-date">Aug 2025 – Present · Bangalore</span>
+          <ul>
+            <li>Handled real-time customer chats with 95% SLA compliance</li>
+            <li>Improved resolution workflows through data insights</li>
+            <li>Collaborated with escalation and tech teams</li>
+          </ul>
+        </div>
+      </div>
 
-    <div class="timeline-item reveal">
-      <span class="timeline-dot"></span>
-      <div class="timeline-content">
-        <h3>Chat Process Executive</h3>
-        <small>Aug 2025 – Jan 2026 | Bangalore</small>
-        <p>
-          • Managed high-volume customer interactions (95% SLA).<br />
-          • Improved workflows by 20%.<br />
-          • Created analytics-ready logs and reports.
-        </p>
+      <div class="card timeline-item">
+        <div class="timeline-badge">
+          <span class="badge-icon">💻</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Software Engineering Intern</h3>
+          <span class="timeline-date">Dec 2023 – Feb 2024 · Amin Zamin</span>
+          <ul>
+            <li>Optimized backend APIs (30% faster)</li>
+            <li>Developed REST APIs and Vue integrations</li>
+            <li>Worked in Agile teams using Git</li>
+          </ul>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="timeline-item reveal">
-      <span class="timeline-dot"></span>
-      <div class="timeline-content">
-        <h3>Programmer Trainee (Intern)</h3>
-        <small>Dec 2023 – Feb 2024 | Amin Zamin</small>
-        <p>
-          • Optimized Laravel & SQL queries (30% faster).<br />
-          • Built REST APIs & frontend integrations.<br />
-          • Used Git & Agile workflows.
-        </p>
+<!-- SKILLS -->
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skill"><span>HTML / CSS</span><div class="bar" data-level="90"></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar" data-level="80"></div></div>
+        <div class="skill"><span>Vue.js</span><div class="bar" data-level="70"></div></div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <div class="skill"><span>Node.js</span><div class="bar" data-level="75"></div></div>
+        <div class="skill"><span>Laravel</span><div class="bar" data-level="80"></div></div>
+        <div class="skill"><span>Python (Django)</span><div class="bar" data-level="85"></div></div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Data & ML</h3>
+        <div class="skill"><span>Python (Pandas)</span><div class="bar" data-level="85"></div></div>
+        <div class="skill"><span>SQL</span><div class="bar" data-level="85"></div></div>
+        <div class="skill"><span>Scikit-learn</span><div class="bar" data-level="70"></div></div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="reveal">
-  <p class="section__text__p1">My Work</p>
-  <h1 class="title">Data Science Projects</h1>
+<!-- CERTIFICATES -->
+<section id="certificates" class="section light certificates-section">
+  <div class="container">
+    <h2 class="section-title">Certificates</h2>
 
-  <div class="project-grid">
+    <div class="certificates-grid">
+      <div class="card cert-card">
+        <h3>Google Data Analytics Professional Certificate</h3>
+        <span>Coursera · 2024</span>
+        <p>Mastered data cleaning, visualization, and analysis using R, SQL, and Tableau.</p>
+        <a href="#" class="cert-link" target="_blank">View Certificate</a>
+      </div>
 
-    <div class="project-card reveal">
-      <h3>Sales & Customer Dashboard</h3>
-      <p>Python • SQL • Power BI</p>
+      <div class="card cert-card">
+        <h3>Machine Learning Specialization</h3>
+        <span>DeepLearning.AI · 2024</span>
+        <p>Supervised/unsupervised learning, neural networks, and best practices in ML.</p>
+        <a href="#" class="cert-link" target="_blank">View Certificate</a>
+      </div>
+
+      <div class="card cert-card">
+        <h3>Full-Stack Web Development</h3>
+        <span>freeCodeCamp · 2023</span>
+        <p>Built responsive web apps with HTML, CSS, JS, Node, React, and MongoDB.</p>
+        <a href="#" class="cert-link" target="_blank">View Certificate</a>
+      </div>
     </div>
-
-    <div class="project-card reveal">
-      <h3>Heart Disease Prediction</h3>
-      <p>ML • Scikit-Learn</p>
-    </div>
-
-    <div class="project-card reveal">
-      <h3>Sales Forecasting</h3>
-      <p>Time-Series • Prophet</p>
-    </div>
-
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="reveal">
-  <h1 class="title">Contact Me</h1>
-  <p>Email: <a href="mailto:farhan.syed.sr@gmail.com">farhan.syed.sr@gmail.com</a></p>
+<!-- PROJECTS -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+      <div class="card project-card">
+        <h3>Laravel E-Commerce Platform</h3>
+        <p>A full-featured online store with user auth, payment integration, and admin dashboard.</p>
+        <div class="project-links">
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <h3>HR Management System</h3>
+        <p>Web app for employee onboarding, performance tracking, and leave management using Node.js and MongoDB.</p>
+        <div class="project-links">
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <h3>ML-Powered Recommendation Engine</h3>
+        <p>Data analysis tool using Python and Scikit-learn for personalized product suggestions.</p>
+        <div class="project-links">
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
-  <p>Code & Design by Syed Farhan</p>
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <h2 class="section-title">Let’s Talk</h2>
+    <div class="contact-content">
+      <p class="contact-email">Email: <a href="mailto:farhan.syed.sr@gmail.com">farhan.syed.sr@gmail.com</a></p>
+      <p class="contact-linkedin">LinkedIn: <a href="https://linkedin.com/in/syed-farhan-sr" target="_blank">syed-farhan-sr</a></p>
+      <p class="contact-github">GitHub: <a href="https://github.com/syedfarhansr" target="_blank">@syedfarhan</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Syed Farhan. Built with ❤️ and Code.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
